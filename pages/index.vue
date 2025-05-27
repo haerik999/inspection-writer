@@ -304,7 +304,7 @@ function copyToClipboard() {
       if (!part.isPlaceholder) {
         return part.text;
       } else {
-        return filledPlaceholders.value[part.text]?.join(', ') || part.text;
+        return filledPlaceholders.value[part.text]?.join(' ') || part.text;
       }
     })
     .join('');
